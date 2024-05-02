@@ -1,0 +1,30 @@
+@import "variables";
+
+@import "~@coreui/coreui/scss/coreui.scss";
+
+@import "fixes";
+
+@import "custom";
+
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+html,body{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+}
+
+.MuiInput-underline::after{
+  display:none
+}
+.MuiInput-underline::before{
+  display: none
+}
